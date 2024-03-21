@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "206192120187",
+    "project_id": "shesafe-test",
+    "storage_bucket": "shesafe-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206192120187:android:f8c8d557639000ed766dde",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYAQUF_badO45Ej77oEbvtXfUGTL-_wOY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
