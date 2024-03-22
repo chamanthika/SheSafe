@@ -6,6 +6,8 @@ class Login extends StatelessWidget {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
+  Login({super.key});
+
   @override
   Widget build(BuildContext context) {
     void signIn() async {
@@ -17,7 +19,7 @@ class Login extends StatelessWidget {
           .then(
             (value) => Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => MicrophonePermission()),
+              MaterialPageRoute(builder: (context) => const MicrophonePermission()),
             ),
           );
     }
@@ -38,34 +40,34 @@ class Login extends StatelessWidget {
                     height: 200,
                   ),
                 ),
-                Text(
+                const Text(
                   'Login',
                   textAlign: TextAlign.center,
                   style: TextStyle(fontSize: 24.0, color: Colors.pink),
                 ),
-                SizedBox(height: 20),
-                Container(
+                const SizedBox(height: 20),
+                SizedBox(
                   width: 300,
                   child: Column(
                     children: [
                       TextFormField(
                         controller: emailController,
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           hintText: 'Enter your email',
                           prefixIcon:
                               Icon(Icons.email_outlined, color: Colors.pink),
                         ),
                       ),
-                      SizedBox(height: 10),
+                      const SizedBox(height: 10),
                       TextFormField(
                         controller: passwordController,
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           hintText: 'Enter your password',
                           prefixIcon:
                               Icon(Icons.lock_outline, color: Colors.pink),
                         ),
                       ),
-                      SizedBox(height: 10),
+                      const SizedBox(height: 10),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -79,40 +81,40 @@ class Login extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(5.0),
                                 ),
                                 side: MaterialStateBorderSide.resolveWith(
-                                    (states) => BorderSide(
+                                    (states) => const BorderSide(
                                         width: 1.0, color: Colors.pink)),
                               ),
-                              Text(
+                              const Text(
                                 'Remember me',
                                 style: TextStyle(color: Colors.pink),
                               ),
                             ],
                           ),
-                          Text(
+                          const Text(
                             'Forgot Password?',
                             style: TextStyle(color: Colors.pink),
                           ),
                         ],
                       ),
-                      SizedBox(height: 20),
+                      const SizedBox(height: 20),
                       ElevatedButton(
                         onPressed: signIn,
-                        child: Text('SIGN-IN'),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.pink,
                           foregroundColor: Colors.white,
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                               horizontal: 60, vertical: 10),
-                          textStyle: TextStyle(fontSize: 15),
+                          textStyle: const TextStyle(fontSize: 15),
                         ),
+                        child: const Text('SIGN-IN'),
                       ),
-                      SizedBox(height: 20),
-                      Text(
+                      const SizedBox(height: 20),
+                      const Text(
                         'or connect using',
                         textAlign: TextAlign.center,
                         style: TextStyle(fontSize: 15.0, color: Colors.pink),
                       ),
-                      SizedBox(height: 20),
+                      const SizedBox(height: 20),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [

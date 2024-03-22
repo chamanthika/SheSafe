@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/new_account.dart';
 
-
-
 class SignUp extends StatelessWidget {
+  const SignUp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 90, 167, 116),
+      backgroundColor: const Color.fromARGB(255, 90, 167, 116),
       body: Stack(
         children: [
           Center(
@@ -15,7 +15,7 @@ class SignUp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Positioned(
-                  top:150,
+                  top: 150,
                   left: 100,
                   child: Image.asset(
                     'assets/images/Picture5.jpg',
@@ -23,59 +23,60 @@ class SignUp extends StatelessWidget {
                     height: 200,
                   ),
                 ),
-                Text(
+                const Text(
                   'Emergency Police \n Assistance',
                   textAlign: TextAlign.center,
                   style: TextStyle(fontSize: 24.0),
                 ),
-                SizedBox(height: 20),
-                Text(
+                const SizedBox(height: 20),
+                const Text(
                   'Effortlessly connect with the nearby\n police station by simply tapping the ‘Call Police’ \n option in the app, ensuring \n prompt assistance in any emergency.',
                   textAlign: TextAlign.center,
                   style: TextStyle(fontSize: 15.0, color: Colors.black),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => NewAccount()),
+                      MaterialPageRoute(builder: (context) => const NewAccount()),
                     );
                   },
-                  child: Text('Sign Up'),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     foregroundColor: Colors.pink,
-                    padding: EdgeInsets.symmetric(horizontal: 60, vertical: 10),
-                    textStyle: TextStyle(fontSize: 15),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 60, vertical: 10),
+                    textStyle: const TextStyle(fontSize: 15),
                   ),
+                  child: const Text('Sign Up'),
                 ),
-                SizedBox(height: 20),
-                Text(
+                const SizedBox(height: 20),
+                const Text(
                   'Already a member',
                   textAlign: TextAlign.center,
                   style: TextStyle(fontSize: 15.0, color: Colors.pink),
                 ),
-                 SizedBox(height: 20),
+                const SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => NewAccount()),
+                      MaterialPageRoute(builder: (context) => const NewAccount()),
                     );
                   },
-                  child: Text('Sign In'),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.pink,
                     foregroundColor: Colors.white,
-                    padding: EdgeInsets.symmetric(horizontal: 60, vertical: 10),
-                    textStyle: TextStyle(fontSize: 15),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 60, vertical: 10),
+                    textStyle: const TextStyle(fontSize: 15),
                   ),
+                  child: const Text('Sign In'),
                 ),
               ],
             ),
           ),
-         
         ],
       ),
     );

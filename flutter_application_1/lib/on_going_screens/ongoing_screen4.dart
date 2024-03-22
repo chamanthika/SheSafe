@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 class OngoingScreen4 extends StatelessWidget {
+  const OngoingScreen4({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 188, 79, 116),
+      backgroundColor: const Color.fromARGB(255, 188, 79, 116),
       body: Stack(
         children: [
           Center(
@@ -20,21 +22,23 @@ class OngoingScreen4 extends StatelessWidget {
                     height: 200,
                   ),
                 ),
-                Text(
+                const Text(
                   'Make a Complaint',
                   textAlign: TextAlign.center,
                   style: TextStyle(fontSize: 24.0),
                 ),
-                SizedBox(height: 20),
-                Text(
+                const SizedBox(height: 20),
+                const Text(
                   ' Stand up for women’s rights by lodging \n complaints directly to the Ministry of \n Women and Child Affairs through our \n app. Your courageous actions contribute \n to the advancement of \n protection of women',
                   textAlign: TextAlign.center,
                   style: TextStyle(fontSize: 15.0, color: Colors.black),
                 ),
+                const SizedBox(
+                  height: 20,
+                ),
               ],
             ),
           ),
-         
         ],
       ),
     );

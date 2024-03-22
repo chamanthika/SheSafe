@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class MicrophonePermission extends StatefulWidget {
+  const MicrophonePermission({super.key});
+
   @override
-  _MicrophonePermissionState createState() => _MicrophonePermissionState();
+  State<MicrophonePermission> createState() => _MicrophonePermissionState();
 }
 
 class _MicrophonePermissionState extends State<MicrophonePermission> {
@@ -20,7 +22,7 @@ class _MicrophonePermissionState extends State<MicrophonePermission> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Maps Sample App'),
+        title: const Text('Maps Sample App'),
         backgroundColor: Colors.green[700],
       ),
       body: GoogleMap(
@@ -30,7 +32,7 @@ class _MicrophonePermissionState extends State<MicrophonePermission> {
           zoom: 11.0,
         ),
         markers: {
-          Marker(
+          const Marker(
             markerId: MarkerId('Sydney'),
             position: LatLng(-33.86, 151.20),
           ),
