@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/microphone_permission.dart';
+import 'package:flutter_application_1/home_page.dart';
 
 class Login extends StatelessWidget {
   final TextEditingController emailController = TextEditingController();
@@ -19,7 +19,7 @@ class Login extends StatelessWidget {
           .then(
             (value) => Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => const MicrophonePermission()),
+              MaterialPageRoute(builder: (context) => const Homepage()),
             ),
           );
     }
