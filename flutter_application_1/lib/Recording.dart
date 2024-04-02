@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Homepage extends StatelessWidget {
-  const Homepage({super.key});
+class Recording extends StatelessWidget {
+  const Recording({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+  return SafeArea(
       child: Scaffold(
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -51,7 +51,7 @@ class Homepage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(height: 50), // Spacer between the centered Container and the Row of images
+                      SizedBox(height: 55), // Spacer between the centered Container and the Row of images
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 5), // Adjust the horizontal padding
                         child: Row(

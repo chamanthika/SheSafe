@@ -75,15 +75,33 @@ flutter:
     - assets/images/instagramlogo1.png
     - assets/images/she2.png
     - assets/images/alerttext.png
-   - assets/images/audio.png
+    - assets/images/audio.png
     - assets/images/callpolice.png
     - assets/images/complaint.png
     - assets/images/emergency.png
-    - assets/images/fackcall.png
+    - assets/images/fakecall.png
     - assets/images/safetytipslogo.png
     - assets/images/homelogo.png
     - assets/images/sos.png
     - assets/images/user1.png
+    - assets/images/answer.png
+    - assets/images/arrow.png
+    - assets/images/defence.png
+    - assets/images/defense2.png
+    - assets/images/endcall.png
+    - assets/images/endcall2.png
+    - assets/images/father.png
+    - assets/images/keypad.png
+    - assets/images/microphone.png
+    - assets/images/policelogo.png
+    - assets/images/tips.png
+    - assets/images/tips2.png
+    - assets/images/travelling.png
+    - assets/images/online.png
+    - assets/images/speaker.png
+    - assets/images/shopping.png
+    - assets/images/Mom.png
+    
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
